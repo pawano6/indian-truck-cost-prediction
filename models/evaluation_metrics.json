@@ -1,0 +1,18 @@
+{
+  "baseline_dummy_mean": {
+    "mae": 16170.014194053332,
+    "rmse": 19688.207474703522,
+    "r2": -0.004018635694320372
+  },
+  "baseline_linear_regression": {
+    "mae": 3635.258432998966,
+    "rmse": 4992.5571474743565,
+    "r2": 0.9354382180513519
+  },
+  "ann": {
+    "mae": 823.3529387988282,
+    "rmse": 1083.8164616136537,
+    "r2": 0.9969574277124549
+  },
+  "note": "This dataset is synthetic (formula-generated). High R2 values reflect the deterministic formula, not real-world prediction accuracy. Do not quote these metrics as production performance."
+}
