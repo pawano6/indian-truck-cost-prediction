@@ -1,0 +1,97 @@
+{
+  "dummy_baseline": {
+    "mae": 16170.014194053332,
+    "rmse": 19688.207474703522,
+    "r2": -0.004018635694320372
+  },
+  "linear_regression": {
+    "mae": 3635.2584329989627,
+    "rmse": 4992.557147474353,
+    "r2": 0.935438218051352,
+    "cv_mae_mean": 3785.9998560166,
+    "cv_mae_std": 73.61661392553857
+  },
+  "random_forest": {
+    "mae": 1926.884151281572,
+    "rmse": 2620.0899974037047,
+    "r2": 0.9822187684471635,
+    "cv_mae_mean": 2147.2732947285945,
+    "cv_mae_std": 40.88945887172932
+  },
+  "hist_gradient_boosting": {
+    "mae": 746.0028974868612,
+    "rmse": 1028.3457124189633,
+    "r2": 0.9972609011691491,
+    "cv_mae_mean": 879.9594960269532,
+    "cv_mae_std": 7.962174425121932
+  },
+  "ann": {
+    "mae": 1298.1382503938803,
+    "rmse": 1722.43011654615,
+    "r2": 0.9923155526354919
+  },
+  "best_model": {
+    "best_model_name": "hist_gradient_boosting",
+    "selection_criterion": "lowest MAE on test set"
+  },
+  "error_analysis": {
+    "by_truck_type": {
+      "Heavy": {
+        "mae": 771.9241286692837,
+        "rmse": 1028.6123653662835,
+        "r2": 0.9971780711232129,
+        "count": 1257
+      },
+      "LCV": {
+        "mae": 631.0235889134945,
+        "rmse": 832.9713590834789,
+        "r2": 0.9950525195293741,
+        "count": 453
+      },
+      "Medium": {
+        "mae": 631.3329248668866,
+        "rmse": 870.1285968761041,
+        "r2": 0.9968079175461324,
+        "count": 763
+      },
+      "Trailer": {
+        "mae": 949.031034671815,
+        "rmse": 1343.0039530955085,
+        "r2": 0.9968542045082863,
+        "count": 527
+      }
+    },
+    "by_distance_band": {
+      "Long (800-1200km)": {
+        "mae": 736.4087338860838,
+        "rmse": 956.7883502156249,
+        "r2": 0.9919987334158017,
+        "count": 676
+      },
+      "Medium (300-800km)": {
+        "mae": 594.454133956597,
+        "rmse": 770.890872288282,
+        "r2": 0.9900734861601244,
+        "count": 890
+      },
+      "Short (<300km)": {
+        "mae": 428.63362730174765,
+        "rmse": 549.6247012817778,
+        "r2": 0.9792882674750811,
+        "count": 401
+      },
+      "Very Long (>1200km)": {
+        "mae": 1006.0504594232511,
+        "rmse": 1357.495008229228,
+        "r2": 0.9923147734121663,
+        "count": 1033
+      }
+    }
+  },
+  "data_quality": {
+    "total_rows": 15000,
+    "missing_value_columns": 0,
+    "duplicate_rows": 0
+  },
+  "validation_note": "This dataset is synthetic (formula-generated). High R\u00b2 values reflect the deterministic generation formula, not real-world prediction accuracy. Random train/test splitting may overestimate generalization because records sharing the same synthetic formula can appear in both sets. A grouped or scenario-based split would provide a more conservative estimate but is not applicable here since all records share the same formula."
+}

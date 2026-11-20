@@ -1,0 +1,71 @@
+
+# ==============================
+# Python virtual environments
+# ==============================
+.venv/
+venv/
+env/
+
+# ==============================
+# Python cache files
+# ==============================
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+*.so
+
+# ==============================
+# Jupyter
+# ==============================
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# ==============================
+# IDE
+# ==============================
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ==============================
+# Operating system
+# ==============================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ==============================
+# Environment variables / secrets
+# ==============================
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# ==============================
+# Python packaging
+# ==============================
+build/
+dist/
+*.egg-info/
+
+# ==============================
+# Temporary files
+# ==============================
+*.tmp
+*.bak
+*.log
+
+# ==============================
+# Notebook and test outputs
+# ==============================
+.coverage
+htmlcov/
+
+# ==============================
+# Temporary project scripts
+# ==============================
+inspect_data.py
